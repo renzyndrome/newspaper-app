@@ -8,3 +8,6 @@ class SignUpView(CreateView):
     form_class = CustomUserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'signup.html'
+
+class ForgotPassword():
+    template_name = 'registration/password_reset_email.html'
